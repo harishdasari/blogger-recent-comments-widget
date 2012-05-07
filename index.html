@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Recent Comments Widget For Blogger</title>
+        
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #ededed;
+        }
+        a, a:link, a:visited{
+            color: #4B3941;
+            text-decoration: none;
+        }
+        a:hover,a:active{
+            color: #AD66B7;
+        }
+        #content{
+            font-size:14px;
+            font-family:Arial, Helvetica, sans-serif;
+            line-height:1.5;
+            width:550px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #fff;
+            border:1px solid #DDD;
+        }
+        h1{
+            font-family:"Century Gothic";
+            font-size:34px;
+            text-align: center;
+            margin: 0 0 20px;
+            text-shadow:1px 1px 0 rgba(0,0,0,.2);
+            line-height:1;
+        }
+
+        /* Recent Comments Styling */
+        ul.w2b_recent_comments{list-style:none;margin:0;padding:0;}
+        .w2b_recent_comments li{background:none !important;margin:0 !important;padding:0 0 8px 0 !important;display:block;clear:both;overflow:hidden;list-style:none;}
+        .w2b_recent_comments li .avatarImage{padding:3px;background:#fefefe;-webkit-box-shadow:0 1px 1px #ccc;-moz-box-shadow:0 1px 1px #ccc;box-shadow:0 1px 1px #ccc;float:left;margin:0 6px 0 0;position:relative;overflow:hidden;}
+        .avatarRound{-webkit-border-radius:100px;-moz-border-radius:100px;border-radius:100px;}
+        .w2b_recent_comments li img{padding:0px;position:relative;overflow:hidden;display:block;}
+        .w2b_recent_comments li span{margin-top:4px;color: #888888;display: block;font-size: 11px;font-style: italic;line-height: 1.4;}
+    </style>
+    <script type="text/javascript">
+    /*<![CDATA[*/
+        // Recent Comments Settings
+        var
+        numComments   = 500,
+        showAvatar    = true,
+        avatarSize    = 60,
+        roundAvatar   = true,
+        showMorelink  = true,
+        moreLinktext  = "More &raquo;"
+        characters    = 60,
+        defaultAvatar = "http://www.gravatar.com/avatar/?d=mm",
+        hideCredits   = true;
+    /*]]>*/
+    </script>
+    <script type="text/javascript" src="w2bRecentCommentsWithGravatar.js"></script>
+
+</head>
+<body>
+    <div id="content">
+        <h1>Recent Comments <small>from <a href="http://www.spiceupyourblog.com">Spuceupyourblog.com</a></small></h1>
+
+        <script type="text/javascript" src="http://www.spiceupyourblog.com/feeds/comments/default?alt=json&callback=w2b_recent_comments&max-results=100"></script>        
+    </div>
+</body>
+</html>
